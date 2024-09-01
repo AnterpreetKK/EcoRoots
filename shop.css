@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+body::-webkit-scrollbar{
+    display:none; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*-------------------NavBar------------------*/
+
+header {
+    top: 0;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -20px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+
+.navbar .logo img{
+    height: 70px;
+    margin:-20px;
+    padding:0;
+}
+
+.navbar .logo img:hover{
+    height: 100px;
+    transition: 1s ease-in-out;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover{
+    color: #228B22;
+    font-size: 1.1em;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/*--------------Offer---------------*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*--------------Footer--------------*/
+
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 500px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info, .footer-links, .footer-newsletter, .footer-social {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px; 
+}
+
+.footer-info h3, .footer-links h3, .footer-newsletter h3, .footer-social h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #ddd;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #21af2874;
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-info, .footer-links, .footer-newsletter, .footer-social {
+        flex: 1 1 45%; 
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info, .footer-links, .footer-newsletter, .footer-social {
+        flex: 1 1 100%; 
+        margin: 10px 0;
+    }
+
+    .footer-content {
+        padding: 0 10px; 
+    }
+
+    .footer-newsletter form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-newsletter input {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .footer-newsletter button {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-info h3, .footer-links h3, .footer-newsletter h3, .footer-social h3 {
+        font-size: 16px;
+    }
+
+    .footer-newsletter input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .footer-newsletter button {
+        padding: 8px;
+        font-size: 14px; 
+    }
+}
